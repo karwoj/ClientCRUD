@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS `springdb`;
+
+CREATE TABLE `clients` (
+  `ID` int(4) NOT NULL,
+  `NAME` varchar(12) NOT NULL,
+  `SURNAME` varchar(12) NOT NULL,
+  `EMAIL` varchar(30) NOT NULL,
+  `ADDRESS` varchar(30) NOT NULL,
+  `TELEPHONE` int(15) NOT NULL,
+  `INFORMATION` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+ALTER TABLE `clients`
+  ADD PRIMARY KEY (`ID`);
+
+ALTER TABLE `clients`
+  MODIFY `ID` int(4) NOT NULL AUTO_INCREMENT
+COMMIT;
+
